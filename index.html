@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureTech Solutions | Cybersecurity Services</title>
+    
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS for styling -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+        .navbar {
+            background-color: #1f2937;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar h1 {
+            font-size: 24px;
+            margin: 0;
+            font-weight: 600;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x800/?cybersecurity') center/cover no-repeat;
+            padding: 120px 20px;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 20px;
+            margin: 20px 0 30px;
+        }
+        .hero button {
+            padding: 12px 30px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #f15b2a;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .hero button:hover {
+            background-color: #d1461c;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px 0;
+        }
+        h2 {
+            text-align: center;
+            color: #1f2937;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            gap: 20px;
+        }
+        .feature-item {
+            width: 30%;
+            padding: 25px;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            background-color: #fff;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+        .feature-item i {
+            color: #f15b2a;
+            margin-bottom: 10px;
+        }
+        .vulnerability-table {
+            width: 100%;
+            margin-top: 40px;
+            border-collapse: collapse;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .vulnerability-table th, .vulnerability-table td {
+            border: 1px solid #e5e7eb;
+            padding: 15px;
+            text-align: left;
+        }
+        .vulnerability-table th {
+            background-color: #1f2937;
+            color: white;
+            font-weight: 500;
+        }
+        .vulnerability-table td {
+            background-color: #fff;
+        }
+        .form-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .form-container form {
+            display: inline-block;
+            max-width: 600px;
+            width: 100%;
+        }
+        .form-container input {
+            padding: 12px;
+            width: 70%;
+            border: 1px solid #e5e7eb;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .form-container button {
+            padding: 12px 25px;
+            background-color: #f15b2a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .form-container button:hover {
+            background-color: #d1461c;
+        }
+        .footer {
+            background-color: #1f2937;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>SecureTech Solutions</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Welcome to SecureTech Solutions</h1>
+            <p>Leading the Future of Cybersecurity with Confidence</p>
+            <button>Get Started</button>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container">
+        <h2>Our Key Services</h2>
+        <div class="features">
+            <div class="feature-item">
+                <i class="fas fa-shield-alt fa-3x"></i>
+                <h3>Security Audits</h3>
+                <p>We provide comprehensive security audits to identify potential vulnerabilities in your system.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-lock fa-3x"></i>
+                <h3>Data Protection</h3>
+                <p>Our team of experts ensures your sensitive data is secure from cyber threats.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-user-secret fa-3x"></i>
+                <h3>Penetration Testing</h3>
+                <p>Simulating cyber-attacks to test your system's defenses and improve security.</p>
+            </div>
+        </div>
+        
+        <!-- Vulnerable Form (SQL Injection) -->
+        <div class="form-container">
+            <form action="search" method="GET">
+                <input type="text" name="query" placeholder="Search..." />
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <!-- Vulnerability Table -->
+        <table class="vulnerability-table">
+            <thead>
+                <tr>
+                    <th>CVE ID</th>
+                    <th>Description</th>
+                    <th>Severity</th>
+                    <th>Affected Products</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CVE-2021-1234</td>
+                    <td>SQL Injection in search parameter</td>
+                    <td>Critical</td>
+                    <td>All versions up to 1.0</td>
+                </tr>
+                <tr>
+                    <td>CVE-2021-5678</td>
+                    <td>Cross-Site Scripting (XSS) in input fields</td>
+                    <td>High</td>
+                    <td>Version 1.1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 SecureTech Solutions. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
